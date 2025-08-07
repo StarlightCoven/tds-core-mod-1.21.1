@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "tdsmod",
+	"version": "${version}",
+	"name": "TDSMod",
+	"description": "This is the Official Mod for The Divine Silence Roleplay Community.",
+	"authors": [
+		"Starlight_Coven (Star)",
+		"Divine Silence Ownership",
+		"Divine Silence Developers"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"discord": "lawyerpestilence",
+		"email": "starlight.coven.061623@gmail.com"
+	},
+	"license": "Closed-Source Software",
+	"icon": "assets/tdsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.divinesilence.tdsmod.TDSMod"
+		],
+		"fabric-datagen": [
+			"net.divinesilence.tdsmod.TDSModDataGenerator"
+		],
+		"client": [
+			"net.divinesilence.tdsmod.TDSClient"
+		]
+	},
+	"mixins": [
+		"tdsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
